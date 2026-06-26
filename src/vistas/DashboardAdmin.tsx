@@ -105,9 +105,13 @@ export const DashboardAdmin: React.FC = () => {
       {/* Cabecera Superior */}
       <header className="bg-[#242424] border-b border-gym-gris/30 p-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <h1 className="text-2xl font-bold tracking-tighter">
+          <button
+            onClick={() => setPestanaActiva('resumen')}
+            className="text-2xl font-bold tracking-tighter flex items-center gap-1 cursor-pointer focus:outline-none"
+            aria-label="Ir al inicio"
+          >
             GYM <span className="text-gym-rojo">EVOLUTION</span>
-          </h1>
+          </button>
           <span className="bg-gym-rojo/20 text-gym-rojo px-2 py-1 rounded text-xs font-semibold uppercase tracking-wider border border-gym-rojo/50">
             {perfil?.rol || 'Administrador'}
           </span>
