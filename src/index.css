@@ -1,0 +1,9 @@
+/* src/index.css */
+@import 'tailwindcss';
+
+@theme {
+  --color-gym-negro: #1C1C1C;
+  --color-gym-rojo: #D31413;
+  --color-gym-gris: #8B8C8D;
+  --color-gym-blanco: #F4F4F4;
+}
